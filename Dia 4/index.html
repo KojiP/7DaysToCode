@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego: Adivina el Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Adivina el Número</h1>
+        <p>Estoy pensando en un número del 1 al 10.<br>
+        ¡Tienes 3 intentos para adivinarlo!</p>
+        <input type="number" id="numero" min="1" max="10" placeholder="Tu número">
+        <button id="guessBtn" onclick="verificarNumero()">Adivinar</button>
+        <p id="message"></p>
+        <p id="attempts">Intentos restantes: 3</p>
+        <button id="restartBtn" style="display:none;">Jugar de nuevo</button>
+    </div>
+    <script src="4Day.js"></script>
+</body>
+</html>
